@@ -32,8 +32,9 @@ function VerifyEmail() {
 window.addEventListener('load', () => {
   setInterval(update, 125);
   if (localStorage.getItem("user", "email")) {
- window.location.pathname = './home.html';
+ window.location.pathname = 'home.html';
   } else {
+    c9ns9le.log("");
   }
 }); 
 
