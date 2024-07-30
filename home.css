@@ -1,0 +1,95 @@
+:root {
+  --oxford-blue: #0C162Dff;
+  ;
+
+  --robin-egg-blue: #00CAC4ff;
+
+  --yinmn-blue: #4C5D7Cff;
+
+  --celtic-blue: #0969DAff;
+
+  --rich-black: #040D21ff;
+
+}
+
+body{
+  background: var(--rich-black);
+}
+
+
+.card{
+width: 290px;
+height: auto;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+background: var(--oxford-blue);
+border: 1.5px solid #202056;
+color: #fff;
+align-items: center;
+overflow: hidden;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.CardContainer p{
+  color: var(--celtic-blue);
+}
+
+.CardContainer{
+  margin: 20px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+button{
+  outline: none;
+  border: 1px solid var(--yinmn-blue);
+  background: transparent;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+.active{
+  border: 1px solid #01FF3E;
+}
+
+input{
+background: var(--oxford-blue);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 5px;
+  color: #fff;
+  border: 1px solid #B2B2B257;
+}
+
+input::placeholder{
+  padding-left: 15px;
+  color: #fff;
+}
+input:focus::placeholder{
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+input:focus{
+  border: 1px solid royalblue;
+}
+.CardContainer input {
+  margin: 10px;
+}
+
+span{
+  color: #00FF3D;
+}
