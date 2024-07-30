@@ -1,0 +1,164 @@
+:root{
+--oxford-blue: #0C162Dff;;
+
+--robin-egg-blue: #00CAC4ff;
+
+--yinmn-blue: #4C5D7Cff;
+
+--celtic-blue: #0969DAff;
+
+--rich-black: #040D21ff;
+
+}
+
+body{
+  background: var(--rich-black);
+}
+
+
+#loaderMain{
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#loaderMain div{
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2.5px solid #E6E6E8;
+  border-top: 2.5px solid royalblue;
+  border-radius: 50%;
+}
+
+
+.Login_Container{
+  position: fixed;
+  background-color: var(--oxford-blue);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 290px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #202056;
+  justify-content: center;
+}
+
+
+.Login, #loaderMain{
+  padding: 20px;
+  margin: 5px;
+}
+
+.InputField{
+  background: var(--oxford-blue);
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.inputFloat{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+text-align: center;
+}
+
+#Error{
+  color: #FF4B4B;
+  text-align: center;
+  font-size: 9px;
+  padding: 15px;
+  flex-wrap: nowrap;
+  margin-right: 65px;
+  width: 100%;
+}
+
+input{
+background: var(--oxford-blue);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 5px;
+  color: #fff;
+  border: 1px solid #B2B2B257;
+}
+
+input::placeholder{
+  padding-left: 15px;
+  color: #fff;
+}
+input:focus::placeholder{
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+input:focus{
+  border: 1px solid royalblue;
+}
+.Title{
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--yinmn-blue);
+}
+
+.Btn{
+  justify-content: center;
+  align-items: center;
+ position: relative;
+ width: 100%;
+ margin-left: 5px;
+ top: 45%;
+}
+button{
+  outline: none;
+  border: 1px solid var(--yinmn-blue);
+  background: transparent;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.active{
+  border: 1px solid #4DFF09;
+  color: #4DFF09;
+}
+
+#L2{
+  display: none;
+  animation: pop 1s ease;
+}
+
+@keyframes pop{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label{
+  color: var(--robin-egg-blue);
+}
