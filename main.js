@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
   if (localStorage.getItem("user", "email")) {
  window.location.pathname = 'home.html';
   } else {
-    c9ns9le.log("");
+    console.log("");
   }
 }); 
 
@@ -60,7 +60,7 @@ button.onclick = () => {
 
 function SignUp2() {
   const Redirect = () => {
-    window.location.pathname = './Home/home.html';
+    window.location.pathname = './CardCreator/home.html';
   }
   localStorage.setItem("user", user.value);
     
