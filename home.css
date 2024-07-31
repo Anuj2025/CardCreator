@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --oxford-blue: #0C162Dff;
   ;
@@ -12,6 +14,11 @@
 
 }
 
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body{
   background: var(--rich-black);
 }
@@ -40,7 +47,6 @@ flex-wrap: wrap;
 
 .CardContainer{
   margin: 20px;
-  text-align: center;
 }
 h2{
   text-align: center;
@@ -56,9 +62,11 @@ button{
   color: #fff;
   margin-top: 15px;
   transition: 0.3s ease;
+  font-weight: 400;
 }
 .active{
   border: 1px solid #01FF3E;
+  color: #01FF3E;
 }
 
 input{
@@ -92,4 +100,19 @@ input:focus{
 
 span{
   color: #00FF3D;
+}
+
+.Submit{
+  border: 1px solid #6880FF;
+  color: #fff;
+  background: #0029FF;
+}
+
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
 }
