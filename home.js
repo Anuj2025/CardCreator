@@ -32,7 +32,7 @@ setInterval(update, 125);
 if (localStorage.getItem("user", "email")) {
   console.log("");
 } else {
-  window.location.pathname = './index.html'
+  window.location.pathname = './CardCreator//index.html'
 }
 }
 
