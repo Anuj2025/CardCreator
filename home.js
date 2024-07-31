@@ -48,6 +48,17 @@ let discription = document.querySelector('input').value;
 document.querySelector(".card_set_dis").innerHTML = discription;
 btn.style.display = 'none';
 localStorage.setItem("Dis", discription);
+let createbtn = document.createElement("div");
+     createbtn.innerHTML = `
+        <button onclick="Dataclear()" id="Btn" class="active" >Reset</button>
+     `;
+     document.querySelector(".card_set_dis").appendChild(createbtn);
+     
+  let createbtn2 = document.createElement("div");
+  createbtn2.innerHTML = `
+          <button onclick="submitData()" id="Btn" class="Submit" >Submit</button>
+       `;
+  document.querySelector(".card_set_dis").appendChild(createbtn2);
 }
 
 function showData() {
@@ -57,7 +68,13 @@ function showData() {
  } else {
    btn.style.display = 'block';
    document.querySelector('input').style.display = "block";
+   let createbtn = document.createElement("div");
+   createbtn.style.display = 'none';
  }
 }
 
+function Dataclear() {
+  localStorage.clear();
+  window.location.reload();
+}
 showData();
