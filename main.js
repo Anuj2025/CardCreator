@@ -31,11 +31,7 @@ function VerifyEmail() {
 
 window.addEventListener('load', () => {
   setInterval(update, 125);
-  if (localStorage.getItem("user", "email")) {
- window.location.pathname = "/CardCreator/home.html';
-  } else {
-   localhost.clear();
-  }
+  localhost.clear();
 }); 
 
 function update() {
