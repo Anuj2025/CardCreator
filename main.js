@@ -32,9 +32,9 @@ function VerifyEmail() {
 window.addEventListener('load', () => {
   setInterval(update, 125);
   if (localStorage.getItem("user", "email")) {
- window.location.pathname = 'home.html';
+ window.location.pathname = "/CardCreator/home.html';
   } else {
-    console.log("");
+   localhost.clear();
   }
 }); 
 
